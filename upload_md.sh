@@ -10,7 +10,7 @@ read -p "Enter IAM username: " iam_user
 
 # This username is hardcoded in sql scripts
 DB_PWD=$(kubectl get secret --namespace postgres postgres-postgresql -o jsonpath="{.data.postgresql-password}" | base64 --decode)
-DB_HOST=`kubectl get cm global -o json | jq .data.\"mosip-api-internal-host\" | tr -d '"'`
+DB_HOST='mdg-db.cvi0iu2wkmhx.ap-south-1.rds.amazonaws.com'
 DB_PORT=5432
 XLS=mosip_master/xlsx
 
