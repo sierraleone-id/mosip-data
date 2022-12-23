@@ -51,7 +51,7 @@ def main():
     args, parser =  args_parse()
 
     files = path_to_files(args.xls_folder)
-    table_order = get_order_from_list(os.path.join(sys.path[0], 'table_order1'))
+    table_order = get_order_from_list(os.path.join(sys.path[0], 'table_order'))
 
     init_logger('full', 'a', './out.log', level=logging.INFO)  # Append mode
 
